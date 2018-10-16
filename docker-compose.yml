@@ -1,0 +1,9 @@
+version: '3.2'
+
+services:
+  app-py:
+    container_name: app-py
+    image: python:3.6
+    command: python /apps/app-parser.py
+    volumes:
+      - ./apps:/apps
